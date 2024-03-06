@@ -1,10 +1,54 @@
 /* Nav bar Starts */
-nav {
+/* nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 6vh;
+} */
+.header-container {
+  margin: 0 auto;
+  position: relative;
 }
+.travel-logo {
+  float: left;
+  margin-top: 10px;
+}
+.travel-navigation-wrapper {
+  float: right;
+  margin-top: 10px;
+}
+.clear {
+  display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    zoom: 1;
+}
+
+li {
+  display: inline-block;
+  position: relative;
+}
+ li a {
+  padding: 25px;
+  display: block;
+  color: #000000;
+ }
+ .sub-menu {
+    pointer-events: none;
+    position: absolute;
+    background-color: #fafafa;
+    min-width: 200px;
+    z-index: 1;
+    left: -30%;
+ }
+ .sub-menu li {
+  display: block;
+ }
+ ul li a:hover {
+  color:#0D6E23;
+ }
 .navigation a {
   display: flex;
   justify-content: center;
