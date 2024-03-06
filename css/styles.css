@@ -291,7 +291,7 @@ nav {
   background-color: white;
   height: 45vh;
   width: 25vw;
-  display: flex;  
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -640,7 +640,7 @@ nav {
 
 .gallery-container img:hover{
 
-    transform: scale(0.5);
+    transform: scale(0.9);
   }
 
 
