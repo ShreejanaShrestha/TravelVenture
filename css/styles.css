@@ -314,11 +314,13 @@ footer {
 
 .footerContent {
   height: 50vh;
-  background-color: gray;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
 }
+
 .footerLogo,
 .footerNav,
 .footerContact {
@@ -459,6 +461,32 @@ footer {
 }
 
 /* gallery page css */
+.gallery-page{
+  margin-top: 3vh;
+    width: 100vw;
+    max-width: 100%;
+    /* background-color: #d9f0ff; */
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gallery{
+
+}
+
+.gallery-cover img{
+    height: 502px;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease 0s;
+
+
+}
+
+
 .gallery-container{
   width: 95%;
   margin: 2rem auto;
@@ -469,15 +497,30 @@ footer {
   width: 100%;
   display:flex;
   flex-wrap: wrap;
+  flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .row > * {
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .gallery-container img{
   width: 90%;
   height: 280px;
+}
+
+.gallery-container img:hover{
+
+
 }
 
 @media (min-width: 992px) {
