@@ -319,6 +319,8 @@ footer {
     justify-content: space-around;
     align-items: center;
     color: #fff;
+    border-bottom: 2px solid;
+    padding: 8px;
 }
 
 .footerLogo,
@@ -340,20 +342,61 @@ footer {
   flex-direction: column;
 }
 .footerNav a {
-  color: black;
+  color: #fff;
   line-height: 3.5vh;
+  padding: 9px;
 }
+.footerContact .contact p{
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+.footerContact .contact i{
+  padding: 0 18px 0 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+
+.socialImage .fa{
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 3px 2px;
+  border-radius: 50%;
+}
+
+.socialImage .fa:hover {
+    opacity: 0.7;
+}
+
+.socialImage .fa {
+  background: #fff;
+  color: black;
+}
+
 .footerSocial {
-  height: 7vh;
-  background-color: aquamarine;
+  height: 13vh;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .footerWatermark {
   height: 3vh;
-  background-color: beige;
+
+  background-color: black;
   text-align: center;
+  color: #fff;
+  font-size: 1px;
+}
+.footer .copyright {
+  padding: 25px 0;
+  font-size: 14px;
+  border-top: 1px solid rgba(256, 256, 256, .1);
 }
 
 .galleryPage {
@@ -484,7 +527,9 @@ footer {
   transition: all 0.3s ease 0s;
 
 
+
 }
+
 
 
 .gallery-container{
@@ -493,6 +538,7 @@ footer {
 
 
 }
+
 .row {
   width: 100%;
   display:flex;
@@ -516,12 +562,16 @@ footer {
 .gallery-container img{
   width: 90%;
   height: 280px;
+  transition: transform .5s ease;
 }
 
 .gallery-container img:hover{
 
+    transform: scale(0.5);
+  }
 
-}
+
+
 
 @media (min-width: 992px) {
   .gallery-container{
