@@ -1,0 +1,459 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6f73d2;
+  font-size: 1.1em;
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+  transition: ease-in-out 0.6s;
+}
+.navigation a:hover {
+  letter-spacing: 0.005em;
+  font-weight: bold;
+  color: #3b3e8f;
+}
+
+.navigation {
+  background-color: #d9f0ff;
+  width: 60vw;
+  height: 7vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  padding-left: 3vw;
+  background-color: #d9f0ff;
+  width: 40vw;
+  height: 7vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.landingPage,
+.storyPage,
+.offerPage {
+  margin-top: 3vh;
+  width: 100vw;
+  max-width: 100%;
+  background-color: #d9f0ff;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landingContainer,
+.storyContainer,
+.offerContainer {
+  background-color: white;
+  height: 60vh;
+  width: 98vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.landingContainerLeft,
+.storyContainerLeft,
+.offerContainerLeft {
+  background-color: white;
+  width: 30vw;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.landingContainerRight,
+.storyContainerRight,
+.offerContainerRight {
+  background-color: #d9f0ff;
+  color: #3b3e8f;
+  width: 55vw;
+  height: 42vh;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.landingContainerRight h1,
+.storyContainerRight h1,
+.offerContainerRight h1 {
+  font-size: 4em;
+}
+
+.landingContainerRight h3,
+.storyContainerRight h3,
+.offerContainerRight h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  opacity: 0.5;
+  font-size: 1.3em;
+  margin-left: 5px;
+  font-weight: lighter;
+}
+.landingContainerRight p,
+.storyContainerRight p,
+.storyContainerRight p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 15px 10px;
+  color: #3b3e8f;
+  letter-spacing: 1px;
+}
+
+.landingContainerButton,
+.storyContainerButton,
+.offerContainerButton {
+  margin-top: 4vh;
+  position: relative;
+  left: 44.5vw;
+  background-color: #3b3e8f;
+  color: #d9f0ff;
+  padding: 10px 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease-in-out 0.3s, transform 0.3s ease-in-out;
+  border: 2px solid transparent;
+}
+.landingContainerButton:hover,
+.storyContainerButton:hover,
+.storyContainerButton:hover {
+  background-color: #d9f0ff;
+  color: #3b3e8f;
+  transform: scale(1.01);
+  border-color: #1e2151;
+}
+.planningPage {
+  background-color: #6f73d2;
+  height: 20vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planningContainer {
+  height: 12vh;
+  width: 88vw;
+  display: flex;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: space-around;
+  align-items: center;
+  background-color: #d9f0ff;
+}
+
+.planningContainer input,
+.planningContainer button {
+  height: 5vh;
+  width: 17vw;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  padding: 0 15px;
+}
+.planningContainer input::placeholder {
+  text-align: center;
+  font-size: 1.2em;
+  opacity: 0.7;
+  letter-spacing: 0.5px;
+  color: #3b3e8f;
+  font-weight: bolder;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.planningContainer button {
+  text-align: center;
+  font-size: 0.95em;
+  letter-spacing: 1px;
+  background-color: #3b3e8f;
+  color: #d9f0ff;
+  font-weight: bolder;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: ease 0.6s;
+}
+.planningContainer button:hover {
+  background-color: #1e2151;
+}
+
+.overviewPage {
+  margin-bottom: 3vh;
+  height: 80vh;
+  background-color: #d9f0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overviewContainer {
+  height: 70vh;
+  width: 93vw;
+  background-color: #d9f0ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overviewDescription {
+  text-align: center;
+  margin: 1vh 0;
+  height: 10vh;
+  width: 80vw;
+  color: #3b3e8f;
+}
+.overviewVideo {
+  background-color: beige;
+  height: 55vh;
+  width: 90vw;
+  margin: 2vh 0;
+}
+.overviewVideo video {
+  object-fit: cover;
+  height: 55vh;
+  width: 90vw;
+}
+
+.packagePage {
+  background-color: #d9f0ff;
+  height: 80vh;
+  margin: 3vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.packageContainer {
+  background-color: #83c9f4;
+  height: 75vh;
+  width: 90vw;
+}
+
+.packagetitle {
+  height: 10vh;
+  background-color: #d9f0ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.packageGrid {
+  height: 55vh;
+  margin: 3vh 0;
+  background-color: #6f73d2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gridItem1 {
+  background-color: white;
+  height: 45vh;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemImage {
+  height: 25vh;
+  width: 25vw;
+}
+.itemImage img {
+  height: inherit;
+  width: inherit;
+}
+
+.itemTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemDetail {
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.itemButton button {
+  height: 3vh;
+  width: 23vw;
+  margin-bottom: 1vh;
+}
+
+footer {
+  height: 60vh;
+}
+
+.footerContent {
+  height: 50vh;
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footerLogo,
+.footerNav,
+.footerContact {
+  height: 30vh;
+}
+.footerLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerLogo img {
+  object-fit: cover;
+  height: 28vh;
+}
+.footerNav {
+  display: flex;
+  flex-direction: column;
+}
+.footerNav a {
+  color: black;
+  line-height: 3.5vh;
+}
+.footerSocial {
+  height: 7vh;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerWatermark {
+  height: 3vh;
+  background-color: beige;
+  text-align: center;
+}
+
+.galleryPage {
+  background-color: #d9f0ff;
+  height: 95vh;
+  margin: 3vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.galleryContainer {
+  background-color: #6f73d2;
+  height: 90vh;
+  width: 97vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.galleryTitle {
+  height: 12vh;
+  text-align: center;
+}
+
+.galleryContnet {
+  height: 82vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.galleryCOntentLeft,
+.galleryContentRight {
+  width: 27vw;
+  background-color: aliceblue;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.galleryContentCenter {
+  width: 30vw;
+  background-color: aliceblue;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.galleryButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  background-color: #3b3e8f;
+}
+
+.storyPage,
+.offerPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 75vh;
+}
+
+.storyTitle,
+.offerTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 10vh;
+  width: 98vw;
+}
+
+.storyContainerRight {
+  background-color: white;
+}
+
+.storyContainerLeft {
+  background-color: #83c9f4;
+}
+
+.offerContainerRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.offerContainerButton {
+  left: 0;
+}
+
+.alertPage {
+  height: 30vh;
+  background-color: #d9f0ff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
