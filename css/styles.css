@@ -12,7 +12,7 @@ nav {
   color: #6f73d2;
   font-size: 1.1em;
   font-weight: 700;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
   transition: ease-in-out 0.6s;
 }
 .navigation a:hover {
@@ -41,6 +41,8 @@ nav {
 }
 /* Nav bar Ends */
 
+/* Landing Page Starts */
+
 .landing-Page,
 .story-Page,
 .offer-Page {
@@ -63,6 +65,8 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .landing-Container-Left,
@@ -75,6 +79,8 @@ nav {
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2.5px solid #d9f0ff;
+  border-radius: 5px;
 }
 
 .landing-Container-Right,
@@ -85,7 +91,8 @@ nav {
   width: 55vw;
   height: 42vh;
   padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 .landing-Container-Right h1,
@@ -106,7 +113,6 @@ nav {
 .landing-Container-Right p,
 .story-Container-Right p,
 .story-Container-Right p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 15px 10px;
   color: #3b3e8f;
   letter-spacing: 1px;
@@ -129,6 +135,8 @@ nav {
   transform: scale(1.01);
   border-color: #1e2151;
 }
+
+/* Landing Page Ends */
 
 /* Planning Page Starts */
 
@@ -177,7 +185,7 @@ nav {
   font-size: 0.95em;
   letter-spacing: 1px;
   font-weight: bolder;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
   transition: ease 0.6s;
 }
 .planning-Container button:hover {
@@ -199,31 +207,39 @@ nav {
 
 .overview-Container {
   height: 70vh;
-  width: 93vw;
-  background-color: #d9f0ff;
+  width: 73vw;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 2vh;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .overview-Description {
   text-align: center;
   margin: 1vh 0;
   height: 10vh;
-  width: 80vw;
+  width: 80%;
+  max-width: 80vw;
   color: #3b3e8f;
+  font-size: 1.2em;
+  line-height: 1.5;
 }
 .overview-Video {
-  background-color: beige;
   height: 55vh;
-  width: 90vw;
+  width: 68vw;
   margin: 2vh 0;
+  border-radius: 15px;
+  overflow: hidden;
 }
 .overview-Video video {
   object-fit: cover;
   height: 55vh;
   width: 90vw;
+  border-radius: 15px;
 }
 
 /* Overview Page Ends */
@@ -232,7 +248,7 @@ nav {
 
 .package-Page {
   background-color: #d9f0ff;
-  height: 80vh;
+  height: 85vh;
   margin: 3vh 0;
   display: flex;
   justify-content: center;
@@ -240,9 +256,15 @@ nav {
 }
 
 .package-Container {
-  background-color: #83c9f4;
+  background-color: #d9f0ff;
   height: 75vh;
-  width: 90vw;
+  width: 100vw;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .package-Title {
@@ -256,36 +278,49 @@ nav {
 
 .package-Grid {
   height: 55vh;
+  width: 95vw;
   margin: 3vh 0;
   background-color: #6f73d2;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-radius: 15px;
 }
 
 .grid-Item-1 {
   background-color: white;
   height: 45vh;
   width: 25vw;
-  display: flex;
+  display: flex;  
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border-radius: 15px;
+  transition: 0.6s ease-in-out;
+}
+
+.grid-Item-1:hover{
+  transform: scale(1.02);
 }
 
 .item-Image {
   height: 25vh;
   width: 25vw;
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .item-Image img {
   height: inherit;
   width: inherit;
+  object-fit: cover;
 }
 
 .item-Title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1vw;
 }
 
 .item-Detail {
@@ -298,6 +333,14 @@ nav {
   height: 3vh;
   width: 23vw;
   margin-bottom: 1vh;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.6s ease-in-out;
+}
+
+.item-Button button:hover{
+  background-color: #1e2151;
 }
 
 /* Package Page Ends */
@@ -396,6 +439,14 @@ nav {
 
 /* Offer Page Starts */
 
+.offer-Page {
+  background-color: white;
+}
+
+.offer-Container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.0);
+}
+
 .offer-Container-Right {
   display: flex;
   flex-direction: column;
@@ -413,7 +464,7 @@ nav {
 
 .alert-Page {
   height: 30vh;
-  background-color: #d9f0ff;
+  background-color: #6f73d2;
   display: flex;
   justify-content: space-around;
   align-items: center;

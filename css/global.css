@@ -3,10 +3,9 @@
   padding: 0;
 }
 
-
-
 a {
   text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 button {
@@ -18,4 +17,12 @@ button {
   font-weight: bold;
   cursor: pointer;
   border: 2px solid transparent;
+}
+
+h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
