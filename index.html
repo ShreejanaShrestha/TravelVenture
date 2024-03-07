@@ -8,6 +8,9 @@
 
     <!------------------- Fonts Awesome Starts ------------------>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-------------------- Fonts Awesome Ends ------------------->
 
     <!-------------------- Site Style Starts -------------------->
@@ -50,7 +53,6 @@
                                     <li><a class="dropdown-item" href="packages.html">Packages</a></li>
                                     <li><a class="dropdown-item" href="#">About Us</a></li>
                                     <li><a class="dropdown-item" href="#">What we Offer</a></li>
-                                    <li><a class="dropdown-item" href="#">Our Team</a></li>
                                     <li><a class="dropdown-item" href="#">Booking Terms and Conditions</a></li>
                                 </ul>
                             </li>
@@ -444,41 +446,84 @@
 
         <!-------------------- Footer Starts -------------------->
         <footer id="footer-wrapper">
-            <div class="footer-Content">
-                <div class="footer-Logo">
-                    <img src="" alt="logo" />
-                </div>
-                <div class="footer-Nav">
-                    <h1>Website</h1>
-                    <a href="">Home</a><a href="">Packages</a><a href="">Stories</a><a href="">Gallery</a><a
-                        href="">Contact Us</a>
-                </div>
-                <div class="footer-Contact">
-                    <h1>Contact Us</h1>
-                    <div class="contact-1">
-                        <img src="" alt="icon" />
-                        <h3>Mississauga, Ontario</h3>
+            <div class="bottom-footer">
+            <div class="custom-container">
+                <div class="footer-content text-white">
+                    <div class="footer-travel-logo left-item">
+                        <div>
+                            <a href="index.html">
+                                <img class="travel_logo" src="images/logo/clover.png" alt="">
+                            </a>
+                        </div>
+                        <h3>Travel Venture</h3>
                     </div>
-                    <div class="contact-2">
-                        <img src="" alt="icon2" />
-                        <h3>Email</h3>
+                    <div class="right-item">
+                        <div class="footer-sitemap">
+                            <h3>Website</h3>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="stories.html">Stories</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="contact_us.html">Contact Us</a></li>
+                                <li><a href="packages.html">Packages</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">What we Offer</a></li>
+                                <li><a href="#">Booking Terms and Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-contact">
+                            <h3>Contact Us</h3>
+                            <div class="address">
+                                <p><i class="fa fa-map-marker me-3"></i>Mississauga, Ontario</p>
+                            </div>
+                            <div class="email-address">
+                                <p><i class="fa fa-envelope me-3"></i>Email</p>
+                            </div>
+                            <div class="contact-number">
+                                <p><i class="fa fa-phone me-3" ></i>Mobile Number</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="contact-3">
-                        <img src="" alt="icon3" />
-                        <h3>Mobile Number</h3>
+                    
+                </div>
+                <hr>
+                <div class="social">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com" target="_blank">
+                                <!-- <img src="images/facebook.svg"> -->
+                                <svg width="62" height="55" viewBox="0 0 62 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M61.3972 27.2997C61.3972 12.2407 47.8552 0.0358887 31.1464 0.0358887C14.4376 0.0358887 0.89563 12.2407 0.89563 27.2997C0.89563 40.0796 10.668 50.8148 23.8437 53.7648V35.628H17.6045V27.2997H23.8437V23.7107C23.8437 14.4346 28.4995 10.132 38.6146 10.132C40.5289 10.132 43.8375 10.4728 45.1965 10.8136V18.3538C44.4875 18.2899 43.2467 18.2473 41.6987 18.2473C36.7357 18.2473 34.8214 19.9406 34.8214 24.339V27.2997H44.7002L42.9986 35.628H34.8096V54.3612C49.7932 52.7318 61.3972 41.2405 61.3972 27.2997Z" fill="white"/>
+                                    </svg>
+                                    
+                                
+                            </a></li>
+                        <li> <a href="https://www.instagram.com" target="_blank">
+                            <!-- <img src="images/instagram.svg" alt=""> -->
+                            <svg width="62" height="49" viewBox="0 0 62 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M31.0885 12.0524C22.4994 12.0524 15.5714 17.5158 15.5714 24.2891C15.5714 31.0625 22.4994 36.5259 31.0885 36.5259C39.6775 36.5259 46.6055 31.0625 46.6055 24.2891C46.6055 17.5158 39.6775 12.0524 31.0885 12.0524ZM31.0885 32.2447C25.538 32.2447 21.0004 28.6769 21.0004 24.2891C21.0004 19.9014 25.5245 16.3336 31.0885 16.3336C36.6524 16.3336 41.1766 19.9014 41.1766 24.2891C41.1766 28.6769 36.6389 32.2447 31.0885 32.2447ZM50.8595 11.5518C50.8595 13.1387 49.2389 14.406 47.2402 14.406C45.228 14.406 43.6209 13.128 43.6209 11.5518C43.6209 9.97563 45.2415 8.69763 47.2402 8.69763C49.2389 8.69763 50.8595 9.97563 50.8595 11.5518ZM61.1367 14.4486C60.9071 10.6253 59.7997 7.23859 56.2479 4.44831C52.7097 1.65802 48.4151 0.784728 43.5669 0.59303C38.5701 0.369381 23.5933 0.369381 18.5965 0.59303C13.7618 0.774079 9.46726 1.64737 5.9155 4.43766C2.36373 7.22794 1.26984 10.6146 1.02676 14.438C0.743156 18.3784 0.743156 30.1892 1.02676 34.1297C1.25634 37.953 2.36373 41.3397 5.9155 44.13C9.46726 46.9203 13.7483 47.7936 18.5965 47.9853C23.5933 48.2089 38.5701 48.2089 43.5669 47.9853C48.4151 47.8042 52.7097 46.9309 56.2479 44.13C59.7862 41.3397 60.8936 37.953 61.1367 34.1297C61.4203 30.1892 61.4203 18.3891 61.1367 14.4486ZM54.6814 38.3577C53.628 40.4451 51.5888 42.0532 48.9283 42.8946C44.9444 44.1406 35.491 43.8531 31.0885 43.8531C26.6859 43.8531 17.219 44.13 13.2486 42.8946C10.6017 42.0639 8.56244 40.4558 7.49556 38.3577C5.9155 35.216 6.28013 27.761 6.28013 24.2891C6.28013 20.8173 5.929 13.3517 7.49556 10.2206C8.54894 8.13319 10.5882 6.52505 13.2486 5.6837C17.2325 4.43766 26.6859 4.72521 31.0885 4.72521C35.491 4.72521 44.9579 4.44831 48.9283 5.6837C51.5753 6.5144 53.6145 8.12254 54.6814 10.2206C56.2614 13.3623 55.8968 20.8173 55.8968 24.2891C55.8968 27.761 56.2614 35.2266 54.6814 38.3577Z" fill="white"/>
+                                </svg>
+                                
+                                </a>
+                            </li>
+                        <li><a href="https://www.linkedin.com" target="_blank">
+                            <!-- <img src="images/linkedin.svg"> -->
+                            <svg width="62" height="49" viewBox="0 0 62 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M56.9313 0.443848H5.05931C2.68247 0.443848 0.751282 1.98809 0.751282 3.88378V44.7156C0.751282 46.6113 2.68247 48.1556 5.05931 48.1556H56.9313C59.3081 48.1556 61.2528 46.6113 61.2528 44.7156V3.88378C61.2528 1.98809 59.3081 0.443848 56.9313 0.443848ZM19.0368 41.3396H10.0696V18.57H19.0503V41.3396H19.0368ZM14.5532 15.4603C11.6767 15.4603 9.35384 13.6178 9.35384 11.36C9.35384 9.10225 11.6767 7.25981 14.5532 7.25981C17.4162 7.25981 19.7525 9.10225 19.7525 11.36C19.7525 13.6285 17.4297 15.4603 14.5532 15.4603ZM52.6502 41.3396H43.6831V30.2637C43.6831 27.6225 43.6155 24.2252 39.0239 24.2252C34.3512 24.2252 33.6355 27.1006 33.6355 30.072V41.3396H24.6683V18.57H33.2709V21.6798H33.3924C34.5943 19.8906 37.5249 18.0056 41.8869 18.0056C50.9622 18.0056 52.6502 22.7235 52.6502 28.8579V41.3396Z" fill="white"/>
+                                </svg>
+                                
+                                </a></li>
+                    </ul>
+                </div>
+                <div class="footer-end">
+                    <div class="bottom-common">
+                        <div class="bottom-item text-white">
+                            <p>© 2024 Travel Venture Labs</p>
+                            </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-Social">
-                <div class="social-Image">
-                    <img src="" alt="img1" />
-                    <img src="" alt="img2" />
-                    <img src="" alt="img3" />
-                </div>
-            </div>
-            <div class="footer-Watermark">
-                <p>2024 company name</p>
-            </div>
+        </div>
         </footer>
         <!-------------------- Footer Ends -------------------->
     </div>

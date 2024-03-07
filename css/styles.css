@@ -455,8 +455,8 @@ h1 {
 }
 
 
-.gallery{
-
+.gallery-container .row .col {
+    flex: 1 0 33%;
 }
 
 .gallery-cover img{
@@ -523,6 +523,110 @@ h1 {
       width:calc(100% / 3);
    }
  }
+#footer-wrapper {
+    background-color: #0F1020;
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.right-item {
+    display: flex;
+}
+.footer-sitemap {
+    padding-right: 185px;
+}
+.footer-travel-logo .travel_logo {
+    width: 100px;
+    height: auto;
+}
+#footer-wrapper ul {
+    margin: 0;
+    padding: 0;
+}
+#footer-wrapper ul li {
+    display: block;
+}
+#footer-wrapper li a {
+    color: #ffffff;
+    padding: 0;
+}
+
+#footer-wrapper hr {
+    background-color: #fff;
+    opacity: 1;
+    height: 4px;
+    margin-top: 30px;
+}
+#footer-wrapper .custom-container {
+    padding-bottom: 0px;
+}
+
+#footer-wrapper .bottom-footer .social {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 40px;
+    position: relative;
+}
+
+#footer-wrapper .bottom-footer .social ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#footer-wrapper .bottom-footer .social ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+#footer-wrapper .bottom-footer .social ul li a {
+    position: relative;
+    display: block;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    background: rgba(51, 51, 51, .53);
+    border-radius: 50%;
+    font-size: 30px;
+    color: #666;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer-wrapper .bottom-footer .social ul li a svg {
+    height: 30px;
+    width: 30px;
+}
+
+#footer-wrapper .bottom-footer .footer-end {
+    /* margin-top: 20px; */
+}
+#footer-wrapper .bottom-footer .footer-end .bottom-common {
+    display: flex;
+    justify-content: center;
+}
+
+.section-title h1:after {
+    content: '';
+    background-color: #003b70;
+    width: 72px;
+    height: 2px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+
+
+
 
 .footer-Logo,
 .footer-Nav,
