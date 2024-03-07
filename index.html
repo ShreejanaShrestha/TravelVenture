@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>TravelVenture</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!------------------- Fonts Awesome Starts ------------------>
-    <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <!-------------------- Fonts Awesome Ends ------------------->
 
     <!-------------------- Site Style Starts -------------------->
@@ -20,18 +18,19 @@
 
     <!-------------------- Bootstrap Starts -------------------->
     <link href="css/components/bootstrap.min.css" rel="stylesheet">
-    <link href="css/components/slick-theme.css" rel="stylesheet" type="text/css"/>
+    <link href="css/components/slick-theme.css" rel="stylesheet" type="text/css" />
     <link href="css/components/slick.css" rel="stylesheet" type="text/css">
     <!--------------------- Bootstrap Ends --------------------->
-    
+
 </head>
-  <body>
+
+<body>
     <!-------------------- Wrapper Starts -------------------->
     <div id="wrapper">
-      <!-------------------- Header Starts -------------------->
-      <header id="header-wrapper" class="custom-container remove-top-bottom">
-        <!-------------------- Navbar Starts -------------------->
-        <!-- <nav>
+        <!-------------------- Header Starts -------------------->
+        <header id="header-wrapper" class="custom-container remove-top-bottom">
+            <!-------------------- Navbar Starts -------------------->
+            <!-- <nav>
           <div class="logo">
             <a href="#"> <img src="" alt="logo" /> </a>
           </div>
@@ -43,57 +42,58 @@
             <a href=""> Contact Us </a>
           </div>
         </nav> -->
-        <div class="header-container container">
-            <div class="travel-logo">
-                <div>
-                    <a href="index.html">
-                        <img class="travel_logo" src="images/logo/clover.png" alt="">
-                    </a>
+            <div class="header-container container">
+                <div class="travel-logo">
+                    <div>
+                        <a href="index.html">
+                            <img class="travel_logo" src="images/logo/clover.png" alt="">
+                        </a>
+                    </div>
                 </div>
+                <div class="travel-navigation-wrapper">
+                    <!-- Example single danger button -->
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li class="has-submenu">
+                                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="sub-menu dropdown-menu">
+                                    <li><a class="dropdown-item" href="packages.html">Packages</a></li>
+                                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                                    <li><a class="dropdown-item" href="#">What we Offer</a></li>
+                                    <li><a class="dropdown-item" href="#">Our Team</a></li>
+                                    <li><a class="dropdown-item" href="#">Booking Terms and Conditions</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="stories.html">Stories</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact_us.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="clear"></div>
             </div>
-            <div class="travel-navigation-wrapper">
-                <!-- Example single danger button -->
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li class="has-submenu">
-                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                Services
-                            </a>
-                            <ul class="sub-menu dropdown-menu">
-                                <li><a class="dropdown-item" href="packages.html">Packages</a></li>
-                                <li><a class="dropdown-item" href="#">About Us</a></li>
-                                <li><a class="dropdown-item" href="#">What we Offer</a></li>
-                                <li><a class="dropdown-item" href="#">Our Team</a></li>
-                                <li><a class="dropdown-item" href="#">Booking Terms and Conditions</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="stories.html">Stories</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact_us.html">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="clear"></div>
-        </div>
-        
-        <!-------------------- Navbar Ends -------------------->
-      </header>
-      <!-------------------- Header Ends -------------------->
 
-      <div id="content-wrapper">
-        <div id="home-page">
-            <section class="common-banner-section">
-                <div class="common-banner-slider">
+            <!-------------------- Navbar Ends -------------------->
+        </header>
+        <!-------------------- Header Ends -------------------->
 
-                    <div class="common-image-container" style="background-image: url('images/image1.jpg')">
-                        <div class="overlay"></div>
-                        <div class="custom-container">
-                            <div class="inner">
-                                <div class="banner-text text-right">
-                                    <h1>“We are pleased to launch to provide you with the life-time experiences”</h1>
+        <div id="content-wrapper">
+            <div id="home-page">
+                <section class="common-banner-section">
+                    <div class="common-banner-slider">
+
+                        <div class="common-image-container" style="background-image: url('images/image1.jpg')">
+                            <div class="overlay"></div>
+                            <div class="custom-container">
+                                <div class="inner">
+                                    <div class="banner-text text-right">
+                                        <h1>“We are pleased to launch to provide you with the life-time experiences”
+                                        </h1>
+                                    </div>
                                 </div>
-                            </div>
                                 <form class="form-inline" id="form1" name="form1" method="get">
                                     <div class="form-group">
                                         <input type="text" name="destination" placeholder="Destination">
@@ -104,90 +104,97 @@
                                     <div class="form-group">
                                         <input type="text" name="duration" placeholder="Duration">
                                     </div>
-                                    <button type="button" name="advanced_search" id="advanced_search" class="travel-btn">
+                                    <button type="button" name="advanced_search" id="advanced_search"
+                                        class="travel-btn">
                                         <a href="#">Search</a>
                                     </button>
-                                    </form>
-                        </div>
-                    </div>
-    
-                    <div class="common-image-container" style="background-image: url('images/image2.jpg')">
-                        <div class="overlay"></div>
-                        <div class="custom-container">
-                            <div class="inner">
-                                <div class="banner-text text-right">
-                                    <h1>“We are pleased to launch to provide you with the life-time experiences”</h1>
-                                </div>
-                            </div>
-                                <form class="form-inline" id="form1" name="form1" method="get">
-                                    <div class="form-group">
-                                        <input type="text" name="destination" placeholder="Destination">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="activity" placeholder="Activity">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="duration" placeholder="Duration">
-                                    </div>
-                                    <button type="button" name="advanced_search" id="advanced_search" class="travel-btn">
-                                        <a href="#">Search</a>
-                                    </button>
-                                    </form>
-                        </div>
-                    </div>
-    
-                    <div class="common-image-container" style="background-image: url('images/image3.jpg')">
-                        <div class="overlay"></div>
-                        <div class="custom-container">
-                            <div class="inner">
-                                <div class="banner-text text-right">
-                                    <h1>“We are pleased to launch to provide you with the life-time experiences”</h1>
-                                </div>
-                            </div>
-                                <form class="form-inline" id="form1" name="form1" method="get">
-                                    <div class="form-group">
-                                        <input type="text" name="destination" placeholder="Destination">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="activity" placeholder="Activity">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="duration" placeholder="Duration">
-                                    </div>
-                                    <button type="button" name="advanced_search" id="advanced_search" class="travel-btn">
-                                        <a href="#">Search</a>
-                                    </button>
-                                    </form>
-                        </div>
-                    </div>
-    
-                    <div class="common-image-container" style="background-image: url('images/image4.jpg')">
-                        <div class="overlay"></div>
-                        <div class="custom-container">
-                            <div class="inner">
-                                <div class="banner-text text-right">
-                                    <h1>“We are pleased to launch to provide you with the life-time experiences”</h1>
-                                </div>
-                            </div>
-                            <form class="form-inline" id="form1" name="form1" method="get">
-                                <div class="form-group">
-                                    <input type="text" name="destination" placeholder="Destination">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="activity" placeholder="Activity">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="duration" placeholder="Duration">
-                                </div>
-                                <button type="button" name="advanced_search" id="advanced_search" class="travel-btn">
-                                    <a href="#">Search</a>
-                                </button>
                                 </form>
+                            </div>
+                        </div>
+
+                        <div class="common-image-container" style="background-image: url('images/image2.jpg')">
+                            <div class="overlay"></div>
+                            <div class="custom-container">
+                                <div class="inner">
+                                    <div class="banner-text text-right">
+                                        <h1>“We are pleased to launch to provide you with the life-time experiences”
+                                        </h1>
+                                    </div>
+                                </div>
+                                <form class="form-inline" id="form1" name="form1" method="get">
+                                    <div class="form-group">
+                                        <input type="text" name="destination" placeholder="Destination">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="activity" placeholder="Activity">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="duration" placeholder="Duration">
+                                    </div>
+                                    <button type="button" name="advanced_search" id="advanced_search"
+                                        class="travel-btn">
+                                        <a href="#">Search</a>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="common-image-container" style="background-image: url('images/image3.jpg')">
+                            <div class="overlay"></div>
+                            <div class="custom-container">
+                                <div class="inner">
+                                    <div class="banner-text text-right">
+                                        <h1>“We are pleased to launch to provide you with the life-time experiences”
+                                        </h1>
+                                    </div>
+                                </div>
+                                <form class="form-inline" id="form1" name="form1" method="get">
+                                    <div class="form-group">
+                                        <input type="text" name="destination" placeholder="Destination">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="activity" placeholder="Activity">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="duration" placeholder="Duration">
+                                    </div>
+                                    <button type="button" name="advanced_search" id="advanced_search"
+                                        class="travel-btn">
+                                        <a href="#">Search</a>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="common-image-container" style="background-image: url('images/image4.jpg')">
+                            <div class="overlay"></div>
+                            <div class="custom-container">
+                                <div class="inner">
+                                    <div class="banner-text text-right">
+                                        <h1>“We are pleased to launch to provide you with the life-time experiences”
+                                        </h1>
+                                    </div>
+                                </div>
+                                <form class="form-inline" id="form1" name="form1" method="get">
+                                    <div class="form-group">
+                                        <input type="text" name="destination" placeholder="Destination">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="activity" placeholder="Activity">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="duration" placeholder="Duration">
+                                    </div>
+                                    <button type="button" name="advanced_search" id="advanced_search"
+                                        class="travel-btn">
+                                        <a href="#">Search</a>
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <!-- <section class="find-destination-section">
+                </section>
+                <!-- <section class="find-destination-section">
                 <div class="custom-container">
                     <form class="form-inline" id="form1" name="form1" method="get">
                         <div class="form-group">
@@ -205,176 +212,210 @@
                         </form>
                 </div>
             </section> -->
-            <section class="tour-experience-section">
-                <div class="custom-container">
-                <div class="overview-page">
-                    <div class="overview-Description">
-                        <h1>Our Tour Experience</h1>
-                        <!-- <h3>subTitle</h3> -->
-                      </div>
-                    <div class="overview-Container">
-                      
-                      <div class="overview-Video">
-                        <!-- <video controls autoplay muted>
+                <section class="tour-experience-section">
+                    <div class="custom-container">
+                        <div class="overview-page">
+                            <div class="overview-Description">
+                                <h1>Our Tour Experience</h1>
+                                <!-- <h3>subTitle</h3> -->
+                            </div>
+                            <div class="overview-Container">
+
+                                <div class="overview-Video">
+                                    <!-- <video controls autoplay muted>
                             <source src="images/travel_cut.mp4" type="video/mp4">
                         </video> -->
-                        <iframe width="917" height="516" src="https://www.youtube.com/embed/j61j9X4xCnA" title="Visit Nepal - Lifetime Experience" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                      </div>
+                                    <iframe width="917" height="516" src="https://www.youtube.com/embed/j61j9X4xCnA"
+                                        title="Visit Nepal - Lifetime Experience" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-            </section>
-            <section class="popular-packages">
-                <div class="custom-container">
-                    <div class="section-title">
-                        <h1>Our Popular Packages</h1>
-                    </div>
-                    <div class="section-content">
-                        <div class="packages-list">
-                            <div class="packages-item-wrapper">
-                                <div class="package-item">
-                                    <div class="image-container">
-                                        <img src="images/image1.jpg" alt="">
-                                    </div>
-                                    <div class="content-description">
-                                        <h3>The Maldives</h3>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit inventore maiores dolorum quasi qui? Assumenda doloremque voluptatem porro dolorem laborum commodi magni voluptates possimus, deserunt culpa ut suscipit molestias pariatur.</p>
-                                    </div>
-                                    <div class="read-more-btn">
-                                        <button class="travel-btn">
-                                            <a href="package-listing.html">More Detail</a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="packages-item-wrapper">
-                                <div class="package-item">
-                                    <div class="image-container">
-                                        <img src="images/image1.jpg" alt="">
-                                    </div>
-                                    <div class="content-description">
-                                        <h3>The Maldives</h3>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit inventore maiores dolorum quasi qui? Assumenda doloremque voluptatem porro dolorem laborum commodi magni voluptates possimus, deserunt culpa ut suscipit molestias pariatur.</p>
-                                    </div>
-                                    <div class="read-more-btn">
-                                        <button class="travel-btn">
-                                            <a href="package-listing.html">More Detail</a>
-                                        </button>
+                </section>
+                <section class="popular-packages">
+                    <div class="custom-container">
+                        <div class="section-title">
+                            <h1>Our Popular Packages</h1>
+                        </div>
+                        <div class="section-content">
+                            <div class="packages-list">
+                                <div class="packages-item-wrapper">
+                                    <div class="package-item">
+                                        <div class="image-container">
+                                            <img src="images/image1.jpg" alt="">
+                                        </div>
+                                        <div class="content-description">
+                                            <h3>The Maldives</h3>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit inventore
+                                                maiores dolorum quasi qui? Assumenda doloremque voluptatem porro dolorem
+                                                laborum commodi magni voluptates possimus, deserunt culpa ut suscipit
+                                                molestias pariatur.</p>
+                                        </div>
+                                        <div class="read-more-btn">
+                                            <button class="travel-btn">
+                                                <a href="package-listing.html">More Detail</a>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="packages-item-wrapper">
-                                <div class="package-item">
-                                    <div class="image-container">
-                                        <img src="images/image1.jpg" alt="">
-                                    </div>
-                                    <div class="content-description">
-                                        <h3>The Maldives</h3>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit inventore maiores dolorum quasi qui? Assumenda doloremque voluptatem porro dolorem laborum commodi magni voluptates possimus, deserunt culpa ut suscipit molestias pariatur.</p>
-                                    </div>
-                                    <div class="read-more-btn">
-                                        <button class="travel-btn">
-                                            <a href="package-listing.html">More Detail</a>
-                                        </button>
+                                <div class="packages-item-wrapper">
+                                    <div class="package-item">
+                                        <div class="image-container">
+                                            <img src="images/image1.jpg" alt="">
+                                        </div>
+                                        <div class="content-description">
+                                            <h3>The Maldives</h3>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit inventore
+                                                maiores dolorum quasi qui? Assumenda doloremque voluptatem porro dolorem
+                                                laborum commodi magni voluptates possimus, deserunt culpa ut suscipit
+                                                molestias pariatur.</p>
+                                        </div>
+                                        <div class="read-more-btn">
+                                            <button class="travel-btn">
+                                                <a href="package-listing.html">More Detail</a>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="packages-item-wrapper">
+                                    <div class="package-item">
+                                        <div class="image-container">
+                                            <img src="images/image1.jpg" alt="">
+                                        </div>
+                                        <div class="content-description">
+                                            <h3>The Maldives</h3>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit inventore
+                                                maiores dolorum quasi qui? Assumenda doloremque voluptatem porro dolorem
+                                                laborum commodi magni voluptates possimus, deserunt culpa ut suscipit
+                                                molestias pariatur.</p>
+                                        </div>
+                                        <div class="read-more-btn">
+                                            <button class="travel-btn">
+                                                <a href="package-listing.html">More Detail</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <div class="packages-item-wrapper">
-                                <div class="package-item">
-                                    <div class="image-container">
-                                        <img src="images/image2.jpg" alt="">
-                                    </div>
-                                    <div class="content-description">
-                                        <h3>The Maldives</h3>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit inventore maiores dolorum quasi qui? Assumenda doloremque voluptatem porro dolorem laborum commodi magni voluptates possimus, deserunt culpa ut suscipit molestias pariatur.</p>
-                                    </div>
-                                    <div class="read-more-btn">
-                                        <button class="travel-btn">
-                                            <a href="package-listing.html">More Detail</a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="packages-item-wrapper">
-                                <div class="package-item">
-                                    <div class="image-container">
-                                        <img src="images/image2.jpg" alt="">
-                                    </div>
-                                    <div class="content-description">
-                                        <h3>The Maldives</h3>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit inventore maiores dolorum quasi qui? Assumenda doloremque voluptatem porro dolorem laborum commodi magni voluptates possimus, deserunt culpa ut suscipit molestias pariatur.</p>
-                                    </div>
-                                    <div class="read-more-btn">
-                                        <button class="travel-btn">
-                                            <a href="package-listing.html">More Detail</a>
-                                        </button>
+                                <div class="packages-item-wrapper">
+                                    <div class="package-item">
+                                        <div class="image-container">
+                                            <img src="images/image2.jpg" alt="">
+                                        </div>
+                                        <div class="content-description">
+                                            <h3>The Maldives</h3>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit inventore
+                                                maiores dolorum quasi qui? Assumenda doloremque voluptatem porro dolorem
+                                                laborum commodi magni voluptates possimus, deserunt culpa ut suscipit
+                                                molestias pariatur.</p>
+                                        </div>
+                                        <div class="read-more-btn">
+                                            <button class="travel-btn">
+                                                <a href="package-listing.html">More Detail</a>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="packages-item-wrapper">
-                                <div class="package-item">
-                                    <div class="image-container">
-                                        <img src="images/image2.jpg" alt="">
+                                <div class="packages-item-wrapper">
+                                    <div class="package-item">
+                                        <div class="image-container">
+                                            <img src="images/image2.jpg" alt="">
+                                        </div>
+                                        <div class="content-description">
+                                            <h3>The Maldives</h3>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit inventore
+                                                maiores dolorum quasi qui? Assumenda doloremque voluptatem porro dolorem
+                                                laborum commodi magni voluptates possimus, deserunt culpa ut suscipit
+                                                molestias pariatur.</p>
+                                        </div>
+                                        <div class="read-more-btn">
+                                            <button class="travel-btn">
+                                                <a href="package-listing.html">More Detail</a>
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="content-description">
-                                        <h3>The Maldives</h3>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit inventore maiores dolorum quasi qui? Assumenda doloremque voluptatem porro dolorem laborum commodi magni voluptates possimus, deserunt culpa ut suscipit molestias pariatur.</p>
-                                    </div>
-                                    <div class="read-more-btn">
-                                        <button class="travel-btn">
-                                            <a href="package-listing.html">More Detail</a>
-                                        </button>
+                                </div>
+                                <div class="packages-item-wrapper">
+                                    <div class="package-item">
+                                        <div class="image-container">
+                                            <img src="images/image2.jpg" alt="">
+                                        </div>
+                                        <div class="content-description">
+                                            <h3>The Maldives</h3>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit inventore
+                                                maiores dolorum quasi qui? Assumenda doloremque voluptatem porro dolorem
+                                                laborum commodi magni voluptates possimus, deserunt culpa ut suscipit
+                                                molestias pariatur.</p>
+                                        </div>
+                                        <div class="read-more-btn">
+                                            <button class="travel-btn">
+                                                <a href="package-listing.html">More Detail</a>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="gallery-section">
-                <div class="custom-container">
-                <div class="section-title">
-                    <h1>Gallery</h1>
-                </div>
-                <div class="section-content">
-                    <!-- photo grid -->
-                    <div class="rowingo">
-                        <div class="columningo">
-                            <img src="images/food4.jpg" alt="">
-                            <img src="images/food7.jpeg" alt="">
+                </section>
+                <section class="gallery-section">
+                    <div class="custom-container">
+                        <div class="section-title">
+                            <h1>Gallery</h1>
                         </div>
-                        <div class="columningo mid-column">
-                            <img src="images/service6.jpeg" alt="">
-                        </div>
-                        <div class="columningo">
-                            <img src="images/food4.jpg" alt="">
-                            <img src="images/food7.jpeg" alt="">
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-            </section>
-            <section class="stories-section">
-                <div class="custom-container">
-                    <div class="section-title">
-                        <h1>Stories</h1>
-                    </div>
-                    <div class="section-content">
-                        <div class="common-stories-container">
-                            <div class="common-item-block">
-                                <div class="image-container block-item">
-                                    <div class="inner"></div>
+                        <div class="section-content">
+                            <!-- photo grid -->
+                            <div class="rowingo">
+                                <div class="columningo">
+                                    <img src="images/food4.jpg" alt="">
+                                    <img src="images/food7.jpeg" alt="">
                                 </div>
-                                <div class="text-container block-item">
-                                    <div class="text-content">
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque doloremque illo, quos mollitia saepe earum laboriosam voluptatem doloribus nam odio est ducimus corrupti laudantium, pariatur, quaerat atque dolorem vero ut.</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio error ex eos eveniet ducimus aliquam nemo cum quaerat, iste suscipit ab architecto illum veritatis dolores hic inventore molestias id doloremque beatae tenetur repellendus cumque. Libero ratione quis ullam soluta praesentium itaque deleniti natus nobis aperiam recusandae molestias hic corrupti qui, quibusdam magni? Fuga suscipit quo accusantium necessitatibus architecto harum id velit consectetur voluptates ducimus, reprehenderit optio. Numquam dolorum laborum officiis. Suscipit ratione perferendis, quam aliquid nihil cupiditate amet eius numquam voluptatum dolorem tenetur culpa ipsum unde iusto doloribus dicta? Quaerat vel dolores sapiente blanditiis odio nostrum, libero quis corporis esse.</p>
+                                <div class="columningo mid-column">
+                                    <img src="images/service6.jpeg" alt="">
+                                </div>
+                                <div class="columningo">
+                                    <img src="images/food4.jpg" alt="">
+                                    <img src="images/food7.jpeg" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="stories-section">
+                    <div class="custom-container">
+                        <div class="section-title">
+                            <h1>Stories</h1>
+                        </div>
+                        <div class="section-content">
+                            <div class="common-stories-container">
+                                <div class="common-item-block">
+                                    <div class="image-container block-item">
+                                        <div class="inner"></div>
+                                    </div>
+                                    <div class="text-container block-item">
+                                        <div class="text-content">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
+                                                doloremque illo, quos mollitia saepe earum laboriosam voluptatem
+                                                doloribus nam odio est ducimus corrupti laudantium, pariatur, quaerat
+                                                atque dolorem vero ut.</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio error
+                                                ex eos eveniet ducimus aliquam nemo cum quaerat, iste suscipit ab
+                                                architecto illum veritatis dolores hic inventore molestias id doloremque
+                                                beatae tenetur repellendus cumque. Libero ratione quis ullam soluta
+                                                praesentium itaque deleniti natus nobis aperiam recusandae molestias hic
+                                                corrupti qui, quibusdam magni? Fuga suscipit quo accusantium
+                                                necessitatibus architecto harum id velit consectetur voluptates ducimus,
+                                                reprehenderit optio. Numquam dolorum laborum officiis. Suscipit ratione
+                                                perferendis, quam aliquid nihil cupiditate amet eius numquam voluptatum
+                                                dolorem tenetur culpa ipsum unde iusto doloribus dicta? Quaerat vel
+                                                dolores sapiente blanditiis odio nostrum, libero quis corporis esse.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- <div class="common-item-block">
+                                <!-- <div class="common-item-block">
                                 <div class="image-container block-item">
                                     <div class="inner"></div>
                                 </div>
@@ -385,38 +426,41 @@
                                     </div>
                                 </div>
                             </div> -->
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="offer-section">
+                </section>
+                <section class="offer-section">
                     <div class="section-title">
                         <h1>Best Offer</h1>
                     </div>
-                <div class="section-content">
-                    <div class="custom-container">
-                    <div class="common-stories-container">
-                        <div class="common-item-block">
-                            <div class="image-container block-item">
-                                
-                            </div>
-                            <div class="text-container block-item">
-                                
-                            </div>
-                        </div>
-                        <div class="common-item-block">
-                            <div class="image-container block-item">
-                                <img src="images/home-parallax.png" alt="">
-                            </div>
-                            <div class="text-container block-item">
-                                <div class="text-content text-white">
-                                    <h1>Last minute offer</h1>
-                                    <h3><i>Cheap travel packages and tickets. Book as soon as possible!</i></h3>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque doloremque illo, quos mollitia saepe earum laboriosam voluptatem doloribus nam odio est ducimus corrupti laudantium, pariatur, quaerat atque dolorem vero ut.</p>
+                    <div class="section-content">
+                        <div class="custom-container">
+                            <div class="common-stories-container">
+                                <div class="common-item-block">
+                                    <div class="image-container block-item">
+
+                                    </div>
+                                    <div class="text-container block-item">
+
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- <div class="common-item-block">
+                                <div class="common-item-block">
+                                    <div class="image-container block-item">
+                                        <img src="images/home-parallax.png" alt="">
+                                    </div>
+                                    <div class="text-container block-item">
+                                        <div class="text-content text-white">
+                                            <h1>Last minute offer</h1>
+                                            <h3><i>Cheap travel packages and tickets. Book as soon as possible!</i></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
+                                                doloremque illo, quos mollitia saepe earum laboriosam voluptatem
+                                                doloribus nam odio est ducimus corrupti laudantium, pariatur, quaerat
+                                                atque dolorem vero ut.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="common-item-block">
                             <div class="image-container block-item">
                                 <div class="inner"></div>
                             </div>
@@ -427,94 +471,99 @@
                                 </div>
                             </div>
                         </div> -->
-                    </div>
-                </div> 
-                </div>
-            </section>
-            <section class="botton-notify-section">
-                <div class="custom-container">
-                    <div class="push-notification-section">
-                        <div class="message">
-                            <h3>Want to get more information regarding the latest packages and places?</h3>
-                        </div>
-                        <div class="button-section">
-                            <button class="travel-btn">
-                                <a href="#" >Subscribe</a>
-                            </button>
+                            </div>
                         </div>
                     </div>
-                    
-                </div>
-                
-            </section>
-        </div>
-      </div>
+                </section>
+                <section class="botton-notify-section">
+                    <div class="custom-container">
+                        <div class="push-notification-section">
+                            <div class="message">
+                                <h3>Want to get more information regarding the latest packages and places?</h3>
+                            </div>
+                            <div class="button-section">
+                                <button class="travel-btn">
+                                    <a href="#">Subscribe</a>
+                                </button>
+                            </div>
+                        </div>
 
-      <!-------------------- Footer Starts -------------------->
-      <footer id="footer-wrapper">
-        <div class="footer-Content">
-          <div class="footer-Logo">
-            <img src="" alt="logo" />
-          </div>
-          <div class="footer-Nav">
-            <h1>Website</h1>
-            <a href="">Home</a><a href="">Packages</a><a href="">Stories</a
-            ><a href="">Gallery</a><a href="">Contact Us</a>
-          </div>
-          <div class="footer-Contact">
-            <h1>Contact Us</h1>
-            <div class="contact-1">
-              <img src="" alt="icon" />
-              <h3>Mississauga, Ontario</h3>
+                    </div>
+
+                </section>
             </div>
-            <div class="contact-2">
-              <img src="" alt="icon2" />
-              <h3>Email</h3>
+        </div>
+
+        <!-------------------- Footer Starts -------------------->
+        <footer id="footer-wrapper">
+            <div class="footer-Content">
+                <div class="footer-Logo">
+                    <img src="" alt="logo" />
+                </div>
+                <div class="footer-Nav">
+                    <h1>Website</h1>
+                    <a href="">Home</a><a href="">Packages</a><a href="">Stories</a><a href="">Gallery</a><a
+                        href="">Contact Us</a>
+                </div>
+                <div class="footer-Contact">
+                    <h1>Contact Us</h1>
+                    <div class="contact-1">
+                        <img src="" alt="icon" />
+                        <h3>Mississauga, Ontario</h3>
+                    </div>
+                    <div class="contact-2">
+                        <img src="" alt="icon2" />
+                        <h3>Email</h3>
+                    </div>
+                    <div class="contact-3">
+                        <img src="" alt="icon3" />
+                        <h3>Mobile Number</h3>
+                    </div>
+                </div>
             </div>
-            <div class="contact-3">
-              <img src="" alt="icon3" />
-              <h3>Mobile Number</h3>
+            <div class="footer-Social">
+                <div class="social-Image">
+                    <img src="" alt="img1" />
+                    <img src="" alt="img2" />
+                    <img src="" alt="img3" />
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="footer-Social">
-          <div class="social-Image">
-            <img src="" alt="img1" />
-            <img src="" alt="img2" />
-            <img src="" alt="img3" />
-          </div>
-        </div>
-        <div class="footer-Watermark">
-          <p>2024 company name</p>
-        </div>
-      </footer>
-      <!-------------------- Footer Ends -------------------->
+            <div class="footer-Watermark">
+                <p>2024 company name</p>
+            </div>
+        </footer>
+        <!-------------------- Footer Ends -------------------->
     </div>
     <!-------------------- Wrapper Ends -------------------->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script> -->
     <script type="text/javascript" src="js/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
     <script>
-         $('.common-banner-slider').slick({
-         arrows: true,
-         dots: false,
-         autoplay: true,
-         speed: 500000,
-         slidesToShow: 1,
-         slidesToScroll: 1,
-     });
+        $('.common-banner-slider').slick({
+            arrows: true,
+            dots: false,
+            autoplay: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
 
-     $('.packages-list').slick({
-         arrows: true,
-         dots: false,
-         autoplay: true,
-         speed: 500,
-         slidesToShow: 3,
-         slidesToScroll: 1,
-     });
+        $('.packages-list').slick({
+            arrows: true,
+            dots: false,
+            autoplay: true,
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+        });
     </script>
-  </body>
+</body>
+
 </html>
