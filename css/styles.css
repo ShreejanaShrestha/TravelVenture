@@ -49,6 +49,115 @@ li {
  ul li a:hover {
   color:#0D6E23;
  }
+
+ .common-banner-section .common-image-container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 100px);
+  position: relative;
+  display: flex;
+  flex-wrap: wrap; }
+  .common-banner-section .common-image-container .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.6); }
+  .common-banner-section .common-image-container .custom-container {
+    position: relative;
+    width: 100%; }
+  .common-banner-section .common-image-container.fixed-banner-height {
+    height: 394px; }
+    .common-banner-section .common-image-container.fixed-banner-height .custom-container {
+      position: relative;
+      width: 100%; }
+  .common-banner-section .common-image-container .inner {
+    max-width: 730px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 275px;
+    }
+    .common-banner-section .common-image-container .inner .banner-text {
+      color: #fff;
+      text-align: center;
+      }
+      .common-banner-section .common-image-container .inner .banner-text.text-right {
+        text-align: right; }
+
+
+/*---------------------------------- Slick Slider Starts ----------------------------------*/
+.slick-slider .slick-prev, .slick-slider .slick-next {
+  z-index: 1; }
+  .slick-slider .slick-prev:before, .slick-slider .slick-next:before {
+    display: none; }
+.slick-slider .slick-prev {
+  left: 20px; }
+  .common-banner-section .slick-slider .slick-prev:after {
+    content: '';
+    width: 55px;
+    height: 55px;
+    background-image: url("../images/left-arrow.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 42px;
+    top: 0px; }
+.slick-slider .slick-next {
+  right: 20px; }
+  .common-banner-section .slick-slider .slick-next:after {
+    content: '';
+    width: 55px;
+    height: 55px;
+    background-image: url("../images/right-arrow.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 30px;
+    top: 0px; }
+.slick-slider.slick-dotted {
+  margin-bottom: 0; }
+  .slick-slider.slick-dotted .slick-dots {
+    bottom: 45px; }
+    .slick-slider.slick-dotted .slick-dots li {
+      width: 14px;
+      height: 14px;
+      border-radius: 100%;
+      background-color: #959595;
+      margin: 0 7px; }
+      .slick-slider.slick-dotted .slick-dots li button {
+        color: #fff;
+        opacity: 0; }
+        .slick-slider.slick-dotted .slick-dots li button:before {
+          font-size: 14px; }
+      .slick-slider.slick-dotted .slick-dots li.slick-active {
+        background-color: #fff; }
+
+/*----------------------------------- Slick Slider Ends -----------------------------------*/
+.find-destination-section {
+  background-color:#a69888;
+}
+
+.form-group {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+.form-group input {
+  display: inline-block;
+  outline: none;
+  border: 0;
+  height: 49.6px;
+    width: 350px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+
 .navigation a {
   display: flex;
   justify-content: center;
@@ -250,40 +359,154 @@ li {
 }
 
 .overview-Container {
-  height: 70vh;
-  width: 73vw;
+
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding: 2vh;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .overview-Description {
   text-align: center;
-  margin: 1vh 0;
-  height: 10vh;
-  width: 80%;
-  max-width: 80vw;
+  margin-bottom: 30px;
   color: #3b3e8f;
   font-size: 1.2em;
   line-height: 1.5;
 }
 .overview-Video {
-  height: 55vh;
-  width: 68vw;
-  margin: 2vh 0;
+  text-align: center;
   border-radius: 15px;
-  overflow: hidden;
+  padding: 30px 0;
 }
 .overview-Video video {
   object-fit: cover;
   height: 55vh;
   width: 90vw;
   border-radius: 15px;
+}
+
+.popular-packages {
+  background-color: #f0f0f0;
+}
+h1 {
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.image-container img {
+  width: 390px;
+  height: auto;
+}
+
+.packages-list {
+  display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+.packages-item-wrapper {
+  width: 33.33%;
+    position: relative;
+    padding: 15px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.content-description {
+  margin: 15px 0;
+}
+
+.rowingo {
+  display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.columningo {
+  flex: 33.33%;
+    /* max-width: 25%; */
+    padding: 0 4px;
+}
+
+.mid-column {
+  align-self: center;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+.stories-section {
+  background-color: #f0f0f0;
+}
+
+.common-item-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -25px;
+}
+.common-item-block .image-container,  .common-item-block .text-container {
+  width: 50%;
+}
+.common-item-block .image-container .inner {
+  background-image:url("../images/image4.jpg");
+background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 362px;
+}
+.common-item-block .block-item {
+  padding: 0 25px;
+}
+.common-item-block:nth-of-type(odd) .block-item {
+  position: relative;
+}
+.common-item-block:nth-of-type(odd) .block-item.image-container {
+  right: -50%; }
+.common-item-block:nth-of-type(odd) .block-item.text-container {
+  left: -50%; }
+
+.offer-section .section-content {
+  background-image: url('../images/parallax.jpg');
+  background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+}
+
+.offer-section {
+  padding-top: 70px;
+}
+
+.botton-notify-section{
+  background-color: #4a4848;
+}
+.push-notification-section {
+  display: flex;
+}
+
+.message {
+  width: 75%;
+}
+
+.button-section {
+  width: 25%;
+  text-align: right;
+}
+
+.message {
+  color: #ffffff;
+}
+
+.travel-btn {
+  background: #0d6e23;
+    border: 3px solid #0d6e23;
+    border-radius: 8px;
+    outline: none;
+    padding: 10px 64px;
+}
+.travel-btn a {
+  color: #ffffff;
+}
+.text-white {
+  color: #ffffff;
 }
 
 /* Overview Page Ends */
