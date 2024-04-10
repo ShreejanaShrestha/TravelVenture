@@ -748,8 +748,18 @@ nav {
   position: relative;
   transition: all 0.6s ease;
 }
+.package-info {
+  margin-bottom: 1rem;
+  padding-left: 22px;
+}
 
-.col-package h3 {
+.package-info button{
+  float: right;
+  padding: 10px 11px;
+  margin-right: 26px;
+}
+
+.package-info h3 {
   font-size: 16px;
   font-weight: 600;
   color: #000000;
@@ -784,4 +794,13 @@ nav {
   font-weight: 600;
   color: #000000;
   transition: .3s all ease;
+}
+
+.package:hover{
+  /* filter: grayscale(3); */
+}
+
+.package-img:hover{
+  transform: scale(1.1);
+  transition: .3s;
 }
