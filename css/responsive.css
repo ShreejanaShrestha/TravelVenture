@@ -1,0 +1,39 @@
+@media all and (max-width: 500px) {
+    .one {
+        height: 90vh;
+      }
+      .card1 {
+        width: 60vw;
+        border-radius: 20px;
+      }
+      .one-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .card2 {
+        width: 90vw;
+      }
+      .two-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 60vh;
+      }
+      .two-content p {
+        font-size: 0.85rem;
+      }
+      .card3 {
+        width: 90vw;
+        height: 50vh;
+      }
+      .three-card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 160vh;
+      }
+}
