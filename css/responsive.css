@@ -121,6 +121,15 @@
     .nav-toggle {
         cursor: pointer;
     }
+    .dropdown-toggle::after {
+        position: absolute;
+        right: 8px;
+        top: 23px;
+    }
+    ul.sub-menu.dropdown-menu.show {
+        top: 0 !important;
+        width: 100%;
+    }
     .travel-navigation-wrapper.open {
         display: block;
         max-height: 500px;
