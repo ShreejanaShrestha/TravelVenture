@@ -58,9 +58,7 @@ li a {
 ul li a:hover {
   color: #0d6e23;
 }
-ul li a:hover, ul li a:focus {
-  background-color: #0d6e2342 !important;
-}
+
 
 ul.sub-menu.dropdown-menu.show {
   position: absolute;
@@ -581,11 +579,6 @@ footer a:hover {
   transition: all 0.3s ease 0s;
 }
 
-.gallery-container {
-  /* width: 95%;
-  margin: 2rem auto; */
-}
-
 .row {
   width: 100%;
   display: flex;
@@ -615,31 +608,6 @@ footer a:hover {
 .gallery-container img:hover {
 
   transform: scale(0.9);
-}
-
-@media (min-width: 992px) {
-  .gallery-container {
-    width: 95%;
-    margin: 2rem auto;
-
-
-  }
-
-  .row>* {
-    width: calc(100% / 3);
-  }
-}
-
-.grid-Item-1 {
-  background-color: white;
-  height: 45vh;
-  width: 25vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 15px;
-  transition: 0.6s ease-in-out;
 }
 
 /* Package Page Ends */
@@ -722,10 +690,6 @@ footer a:hover {
   margin-bottom: 20px;
 }
 
-/* .two-cards .card2:first-child {
-  background-color: #f0f0f0; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-} */
 
 .card1 {
   height: 6vh;
@@ -798,9 +762,6 @@ footer a:hover {
   animation-range: entry 50% cover 50%;
 }
 
-/* .three {
-  padding: 5vh 0;
-} */
 .three-title {
   padding: 3vh 3vw;
 }
@@ -1002,11 +963,7 @@ footer a:hover {
 /* ending  of css for contact us */
 
 /* package-listing css */
-.package-list-container {
-  /* width: 95%;
-  margin: 3rem;
-  margin: 3rem auto auto auto; */
-}
+
 
 .package-row {
   display: flex;
@@ -1109,31 +1066,4 @@ footer a:hover {
 }
 #content-wrapper, #stories-page, #gallery-page, #package-page, #package-detail-page {
   padding-top: 100px;
-}
-
-/* package listing responsive */
-@media only screen and (max-width: 600px) {
-  .package-row {
-    flex-direction: column;
-  }
-
-
-  .col-package {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .package-price {
-
-    top: -49px;
-    left: 45px
-  }
-
-  .package-info {
-    margin-bottom: 1rem;
-    padding-left: 37px;
-  }
-
 }

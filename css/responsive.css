@@ -159,8 +159,10 @@
     }
     #content-wrapper, #stories-page, #gallery-page, #package-page, #package-detail-page {
         padding-top: 64px;
-      }
-
+    }
+    ul li a:hover, ul li a:focus {
+        background-color: #0d6e2342 !important;
+    }
 }
 
 @media all and (max-width: 767px) {
@@ -337,6 +339,33 @@
     font-size: 0.7rem;
     padding: 10px 20px;
   }
+}
+
+/* package listing responsive */
+@media only screen and (max-width: 600px) {
+    .package-row {
+      flex-direction: column;
+    }
+  
+  
+    .col-package {
+      width: 100%;
+      max-width: 100%;
+    }
+}
+  
+@media only screen and (min-width: 600px) {
+    .package-price {
+  
+      top: -49px;
+      left: 45px
+    }
+  
+    .package-info {
+      margin-bottom: 1rem;
+      padding-left: 37px;
+    }
+  
 }
 @media all and (max-width: 500px) {
   .one {
