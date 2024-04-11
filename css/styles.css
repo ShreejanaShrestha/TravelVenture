@@ -653,8 +653,11 @@ footer a {
 
 .package-info button{
   float: right;
-  padding: 10px 11px;
-  margin-right: 26px;
+   margin-right: 26px;
+   background-color: #0d6e23;
+   padding: 6px 11px;
+   color: #fff;
+   font-size: 14px;
 }
 
 .package-info h3 {
@@ -669,7 +672,7 @@ footer a {
   top: -69px;
   left: 24px;
   padding: .4em .7em;
-  background: #f49788;
+  background: black;
   font-weight: 400;
   font-size: 14px;
   color: #fff;
@@ -687,7 +690,10 @@ footer a {
   letter-spacing: 2px;
 }
 
-.package-text h3 {
+.package-info h5{
+  font-size: 14px;
+}
+.package-info h3 {
   font-size: 14px;
   font-weight: 600;
   color: #000000;
@@ -712,6 +718,7 @@ footer a {
 
   .col-package {
     width: 100%;
+    max-width: 100%;
   }
 }
 
