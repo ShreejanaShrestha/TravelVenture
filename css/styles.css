@@ -837,11 +837,11 @@ h1 {
   height: 6vh;
   width: 12vw;
   border-radius: 10px;
-  background-color: white;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid #0d6e23;
+  border: 3px solid white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
@@ -849,7 +849,7 @@ h1 {
   transform: translateY(-5px);
 }
 .card1 h3 {
-  color: #0d6e23;
+  color: white;
   margin-top: 8px;
   font-weight: bold;
   font-size: 1rem;
