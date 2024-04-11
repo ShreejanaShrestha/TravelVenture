@@ -804,3 +804,29 @@ nav {
   transform: scale(1.1);
   transition: .3s;
 }
+
+/* package listing responsive */
+@media only screen and (max-width: 600px) {
+    .package-row{
+      flex-direction: column;
+    }
+
+
+  .col-package {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .package-price {
+
+    top: -49px;
+    left: 45px
+
+}
+.package-info {
+  margin-bottom: 1rem;
+  padding-left: 37px;
+}
+
+}
