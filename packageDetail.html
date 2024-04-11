@@ -103,24 +103,24 @@
           <h1>National Park Area</h1>
         </div>
         <div class="two-cards">
-          <div class="card2">
+          <div id="card-index1" class="card2">
             <h5>Description</h5>
           </div>
-          <div class="card2">
+          <div id="card-index2" class="card2">
             <h5>Itinary</h5>
           </div>
-          <div class="card2">
+          <div id="card-index3" class="card2">
             <h5>Map</h5>
           </div>
-          <div class="card2">
+          <div id="card-index4" class="card2">
             <h5>Rules</h5>
           </div>
-          <div class="card2">
+          <div id="card-index5" class="card2">
             <h5>Notes</h5>
           </div>
         </div>
         <div class="two-content">
-          <p>
+          <p id="para1">
             Embark on a journey that will bring your family closer together than ever before. Our "Fam-tastic Voyages"
             are meticulously crafted to create unforgettable experiences that cater to every age group, ensuring that
             each member of your clan finds something to marvel at and cherish. From adrenaline-pumping adventures that
@@ -131,7 +131,7 @@
             Alternatively, lose yourselves in the rich tapestry of vibrant traditions, savoring the flavors of authentic
             cuisine, and immersing yourselves in the warmth of local hospitality.
           </p>
-          <p>
+          <p id="para2">
             With our expert guidance, you'll explore breathtaking destinations, uncover hidden gems, and partake in
             authentic local traditions. Whether you're seeking to conquer nature's most exhilarating challenges or
             simply bask in the beauty of your surroundings, our "Fam-tastic Voyages" offer a harmonious blend of
@@ -195,6 +195,155 @@
 
   </div>
   <!-------------------- Wrapper Ends -------------------->
+  <script>
+    const index1 = document.getElementById('card-index1');
+    const index2 = document.getElementById('card-index2');
+    const index3 = document.getElementById('card-index3');
+    const index4 = document.getElementById('card-index4');
+    const index5 = document.getElementById('card-index5');
+    const para1 = document.getElementById('para1');
+    const para2 = document.getElementById('para2');
+
+
+
+    index1.addEventListener('click', () => {
+      para1.innerHTML = `Embark on a journey that will bring your family closer together than ever before. Our "Fam-tastic Voyages"
+      are meticulously crafted to create unforgettable experiences that cater to every age group, ensuring that
+      each member of your clan finds something to marvel at and cherish. From adrenaline-pumping adventures that
+      push your limits to serene moments of cultural immersion that expand your horizons, these incredible
+      journeys strike the perfect balance between excitement and relaxation, allowing you to forge lasting
+      memories as a family. Imagine trekking through ancient forests, scaling towering peaks, or navigating rapids
+      together, fostering a sense of teamwork and accomplishment that will strengthen your familial bonds.
+      Alternatively, lose yourselves in the rich tapestry of vibrant traditions, savoring the flavors of authentic
+      cuisine, and immersing yourselves in the warmth of local hospitality.`
+
+      para2.innerHTML = `With our expert guidance, you'll explore breathtaking destinations, uncover hidden gems, and partake in
+      authentic local traditions. Whether you're seeking to conquer nature's most exhilarating challenges or
+      simply bask in the beauty of your surroundings, our "Fam-tastic Voyages" offer a harmonious blend of
+      activities that will captivate and delight every member of your family. Prepare to strengthen your familial
+      bonds as you navigate new landscapes, embrace new cultures, and create a tapestry of shared experiences that
+      will forever bind you together in cherished memories.`
+    })
+    index2.addEventListener('click', () => {
+      para1.innerHTML = `<b>Day 1:</b> Arrive in San José
+      Arrive at Juan Santamaría International Airport
+      Transfer to hotel and rest after travel day
+      Welcome dinner to try classic Costa Rican cuisine
+      <br>
+      <b>Day 2:</b> Whitewater Rafting
+      Drive to Pacuare River for a guided whitewater rafting adventure (Class III-IV rapids)
+      Picnic lunch along the river
+      Evening at eco-lodge in the rainforest
+      <br>
+      <b>Day 3:</b> Rainforest Exploration
+      Guided hiking tour through Pacuare Reserve rainforest
+      Canopy walk and zip-lining through the treetops
+      Night tour to spot nocturnal wildlife
+      <br>
+      <b>Day 4:</b> Arenal Volcano
+      Travel to Arenal Volcano region
+      Afternoon at Tabacón Hot Springs
+      Evening volcano viewing
+      <br>
+      Canyoning adventure tour with waterfall rappelling
+      Hike through lush canyons and forests
+      Relax in the evening
+      <br>
+      <b>Day 6:</b> Caño Negro Wildlife Refuge
+      Early morning boat tour of Caño Negro wetlands
+      Birdwatching and wildlife viewing
+      Cultural exchange with local indigenous community
+      <br><b>Day 7:</b> Beach Day at Tamarindo
+      Drive to Guanacaste coast
+      Free day to relax on Tamarindo beach
+      Sunset sailing cruise
+      <b>Day 5:</b> Canyoning and Waterfall Rappelling
+      `
+
+      para2.innerHTML = ` `
+    })
+    index3.addEventListener('click', () => {
+      para1.innerHTML = `Embark on a journey that will bring your family closer together than ever before. Our "Fam-tastic Voyages"
+      are meticulously crafted to create unforgettable experiences that cater to every age group, ensuring that
+      each member of your clan finds something to marvel at and cherish. From adrenaline-pumping adventures that
+      push your limits to serene moments of cultural immersion that expand your horizons, these incredible
+      journeys strike the perfect balance between excitement and relaxation, allowing you to forge lasting
+      memories as a family. Imagine trekking through ancient forests, scaling towering peaks, or navigating rapids
+      together, fostering a sense of teamwork and accomplishment that will strengthen your familial bonds.
+      Alternatively, lose yourselves in the rich tapestry of vibrant traditions, savoring the flavors of authentic
+      cuisine, and immersing yourselves in the warmth of local hospitality.`
+
+      para4.innerHTML = `With our expert guidance, you'll explore breathtaking destinations, uncover hidden gems, and partake in
+      authentic local traditions. Whether you're seeking to conquer nature's most exhilarating challenges or
+      simply bask in the beauty of your surroundings, our "Fam-tastic Voyages" offer a harmonious blend of
+      activities that will captivate and delight every member of your family. Prepare to strengthen your familial
+      bonds as you navigate new landscapes, embrace new cultures, and create a tapestry of shared experiences that
+      will forever bind you together in cherished memories.`
+    })
+    index4.addEventListener('click', () => {
+      para1.innerHTML = `<b>General Tips</b>
+      Rent a car for flexibility and convenience, especially with kids. 
+      Driving can be challenging but manageable.
+      Book activities and accommodations in advance as last-minute availability is limited. 
+      Plan 1-2 activities per day max to avoid being overscheduled. Leave room for spontaneity. 
+      Consider a mix of destinations like La Fortuna (adventure), Monteverde (cloud forest), and beach towns like Manuel Antonio or Samara. 
+      Stay near the airport on arrival day to get oriented before traveling further. 
+      <br>
+      <b>Best Times to Visit</b>
+      Dry season (December to April) is more popular but also busier and more expensive. 
+      Rainy/green season (May to November) has fewer crowds and lower prices but more rain. 
+      <br>
+      <b>
+      Family-Friendly Activities</b>
+      Hiking, zip-lining, waterfall rappelling, whitewater rafting for adventurous families.    
+      Wildlife viewing, hanging bridges, boat tours for nature lovers. 
+      Beach time, surfing lessons, sailing for beach vacations. 
+      Cultural experiences like indigenous community visits. 
+      <br>
+      <b>
+      Accommodations</b>
+      All-inclusive resorts are available but not necessary. 
+      Consider vacation rentals with kitchens for families. 
+      Eco-lodges and boutique hotels offer family-friendly amenities.
+      <br>
+      <b>Logistics</b>
+      No visas required for most nationalities, just passports. 
+      Get travel insurance and register with embassies.
+      Some vaccinations like hepatitis A recommended. 
+      Bring cash (colones) in smaller bills for tipping/purchases. 
+      `
+
+
+      para2.innerHTML = ` `
+    })
+    index5.addEventListener('click', () => {
+      para1.innerHTML = `<b>Materials Needed</b>
+      Notebook or binder to use as the journal base      
+      Variety of paper types - plain, colored, patterned, maps, brochures     
+      Crafting supplies - scissors, glue stick, stapler, markers/crayons      
+      Embellishments - stickers, stamps, ticket stubs, nature items collected
+      <br>
+      <b>Preparation</b>
+      Have kids help pick out and cut/tear papers to use for pages      
+      Bind or staple pages together to create the journal    
+      Decorate the cover with title, drawings, maps, etc. 
+      <br>
+      <b>During the Trip</b>
+      Collect small items daily - ticket stubs, brochures, leaves, etc. 
+      At the end of each day, have kids glue/tape items onto pages      
+      Younger kids can draw pictures, older kids can write entries      
+      Include the date, location, descriptions of activities
+      <br><b>Prompts and Ideas</b>
+      Use different page styles - fold-outs, envelopes, pockets
+      Include family members' photos or artwork as pages
+      Have themed pages for different activities (hiking, beach, etc.) 
+      Let kids be creative with colors, patterns, textures
+      `
+
+      para2.innerHTML = ` `
+    })
+
+  </script>
 </body>
 
 </html>
