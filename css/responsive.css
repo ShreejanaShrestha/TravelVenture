@@ -11,6 +11,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 24px;
+      }
+      .one-title{
+        margin-bottom: 20px!important;
       }
       .card2 {
         width: 90vw;
