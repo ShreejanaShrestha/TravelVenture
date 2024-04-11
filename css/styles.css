@@ -826,6 +826,11 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 20px;
+}
+.two-cards .card2:first-child {
+  background-color: #f0f0f0; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card1 {
@@ -857,6 +862,7 @@ h1 {
   justify-content: center;
   align-items: center;
   background-color: #f0f0f0;
+
 }
 
 .two-title h1,
@@ -874,11 +880,16 @@ h1 {
 .card2 {
   height: 10vh;
   width: 15vw;
-  background-color: #4a4848;
-  border-radius: 25px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  
 }
 
-.two-content {
+.card2 .two-content {
   padding: 3vh 2.5vw;
 }
 .two-content p {
@@ -886,7 +897,7 @@ h1 {
   font-size: 1.5rem;
   animation: textFade linear both;
   animation-timeline: view();
-  animation-range: entry 75% cover 75%;
+  animation-range: entry 50% cover 50%;
 }
 
 /* .three {
