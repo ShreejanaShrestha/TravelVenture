@@ -1,3 +1,6 @@
+/**
+ * Created by Shreejana Shrestha
+ */
 .header-container {
     display: flex;
     flex-direction: row;
@@ -17,15 +20,6 @@
 .travel-navigation-wrapper {
     margin-top: 10px;
 }
-
-/* .clear {
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
-    zoom: 1;
-} */
 
 li {
     display: inline-block;
@@ -137,6 +131,7 @@ ul li a:hover {
     position: absolute;
     left: 42px;
     top: 0px;
+    border-radius: 50%;
 }
 
 .slick-slider .slick-next {
@@ -154,6 +149,7 @@ ul li a:hover {
     position: absolute;
     right: 30px;
     top: 0px;
+    border-radius: 50%;
 }
 
 .slick-slider.slick-dotted {
@@ -225,7 +221,7 @@ ul li a:hover {
     align-items: center;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    padding: 2rem 4rem;
+    padding: 3rem 6rem;
 }
 .video-wrapper {
     position: relative;
@@ -314,13 +310,6 @@ h1 {
     width: 50%;
 }
 
-
-/* #stories-page .common-banner-section {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    /* height: 362px; */
-
 .common-item-block .image-container .inner {
     background-repeat: no-repeat;
     background-position: center;
@@ -363,10 +352,6 @@ h1 {
     background-color: #4a4848;
 }
 
-.push-notification-section {
-    /* display: flex; */
-}
-
 .message {
     width: 75%;
 }
@@ -375,10 +360,15 @@ h1 {
     width: 25%;
     text-align: right;
 }
+.button-section.read {
+    width: 100%;
+    text-align: left;
+}
 
 .message {
     color: #ffffff;
 }
+
 
 .travel-btn {
     /* width: 182px; */
@@ -405,13 +395,124 @@ h1 {
     text-align: center;
 }
 
+footer {
+    background-color: #0F1020;
+}
+footer li a {
+    color: #ffffff;
+    padding: 0;
+}
+
+.footer-content {
+    justify-content: space-between;
+}
+
+.footer-travel-logo .travel_logo {
+    width: 100px;
+    height: auto;
+}
+#footer-wrapper ul {
+    margin: 0;
+    padding: 0;
+}
+#footer-wrapper .footer-sitemap li {
+    display: block;
+}
+footer a {
+    color: #ffffff !important;
+}
+
+.footer-sitemap li a:hover, footer a:hover {
+    color: #0D6E23 !important;
+}
+
+#footer-wrapper .social svg {
+    width: 45px;
+}
+
+#footer-wrapper hr {
+    background-color: #fff;
+    opacity: 1;
+    height: 4px;
+    margin-top: 30px;
+}
+#footer-wrapper .custom-container {
+    padding-bottom: 0px;
+}
+
+#footer-wrapper .bottom-footer .social {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 40px;
+    position: relative;
+}
+
+#footer-wrapper .bottom-footer .social ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#footer-wrapper .bottom-footer .social ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+#footer-wrapper .bottom-footer .social ul li a {
+    position: relative;
+    display: block;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    background: rgba(51, 51, 51, .53);
+    border-radius: 50%;
+    font-size: 30px;
+    color: #666;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer-wrapper .bottom-footer .social ul li a svg {
+    height: 30px;
+    width: 30px;
+}
+
+#footer-wrapper .bottom-footer .footer-end .bottom-common {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.section-title h1{
+    position: relative;
+}
+
+.section-title h1:after {
+    content: '';
+    background-color: #0D6E23;
+    width: 72px;
+    height: 2px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+
+
+/* Footer ends */
+
 
 /* gallery page css */
 .gallery-page{
   margin-top: 3vh;
     width: 100vw;
     max-width: 100%;
-    /* background-color: #d9f0ff; */
     height: 65vh;
     display: flex;
     justify-content: center;
@@ -477,123 +578,6 @@ h1 {
       width:calc(100% / 3);
    }
  }
-footer {
-    background-color: #0F1020;
-}
-
-.footer-content {
-    justify-content: space-between;
-}
-/* .right-item {
-    display: flex;
-} */
-/* .footer-travel-logo {
-    width: 40%;
-}*/
-/* .footer {
-    width: 33.33%;
-}  */
-.footer-sitemap {
-    /* padding-right: 185px; */
-}
-.footer-travel-logo .travel_logo {
-    width: 100px;
-    height: auto;
-}
-#footer-wrapper ul {
-    margin: 0;
-    padding: 0;
-}
-#footer-wrapper .footer-sitemap li {
-    display: block;
-}
-#footer-wrapper li a {
-    color: #ffffff;
-    padding: 0;
-}
-
-#footer-wrapper .social svg {
-    width: 45px;
-}
-
-#footer-wrapper hr {
-    background-color: #fff;
-    opacity: 1;
-    height: 4px;
-    margin-top: 30px;
-}
-#footer-wrapper .custom-container {
-    padding-bottom: 0px;
-}
-
-#footer-wrapper .bottom-footer .social {
-    text-align: center;
-    margin-top: 30px;
-    padding-top: 40px;
-    position: relative;
-}
-
-#footer-wrapper .bottom-footer .social ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-#footer-wrapper .bottom-footer .social ul li {
-    list-style: none;
-    margin: 0 15px;
-}
-
-#footer-wrapper .bottom-footer .social ul li a {
-    position: relative;
-    display: block;
-    width: 55px;
-    height: 55px;
-    text-align: center;
-    background: rgba(51, 51, 51, .53);
-    border-radius: 50%;
-    font-size: 30px;
-    color: #666;
-    transition: .5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#footer-wrapper .bottom-footer .social ul li a svg {
-    height: 30px;
-    width: 30px;
-}
-
-#footer-wrapper .bottom-footer .footer-end {
-    /* margin-top: 20px; */
-}
-#footer-wrapper .bottom-footer .footer-end .bottom-common {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-.section-title h1{
-    position: relative;
-}
-
-.section-title h1:after {
-    content: '';
-    background-color: #0D6E23;
-    width: 72px;
-    height: 2px;
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    margin: auto;
-}
-
-/* Footer ends */
 
 .grid-Item-1 {
     background-color: white;

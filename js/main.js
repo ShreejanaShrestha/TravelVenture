@@ -1,3 +1,6 @@
+/**
+ * Created by Shreejana Shrestha
+ */
 $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
         $('.back-to-top').fadeIn('slow');
@@ -26,7 +29,7 @@ function sliderInit() {
         arrows: true,
         dots: false,
         autoplay: true,
-        speed: 500000,
+        speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
     });
@@ -34,7 +37,7 @@ function sliderInit() {
         arrows: true,
         dots: false,
         autoplay: true,
-        speed: 50000,
+        speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1
     });
@@ -53,6 +56,7 @@ function sliderUpdate() {
     }
 }
 
+// Function to toggle the navigation
 function navInit() {
     $('.nav-toggle').click(function(){
        $('.travel-navigation-wrapper').toggleClass('open');
@@ -70,22 +74,4 @@ function navInit() {
             $(this).parents('li').addClass('open');
         }
     });
-
-    $('.navigation-container > ul >  li > ul > li').on('click', function () {
-        if($(this).hasClass('open-three')){
-            $(this).removeClass('open-three');
-        }else{
-            $(this).parents('ul').parents('li').addClass('open');
-            $('.navigation-container > ul >  li > ul > li').removeClass('open-three');
-            $(this).addClass('open-three');
-        }
-    });
-
-/*    $('.has-submenu > a').click(function (e) {
-        event.preventDefault();
-    })*/
-
-    /*$('.menu-item-has-children').click(function () {
-        $(this).parent('li').children('ul').addClass('open');
-    })*/
 }
