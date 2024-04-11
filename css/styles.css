@@ -769,16 +769,16 @@ h1 {
 
 /* Package Detail Page starts */
 .one {
-  height: 80vh;
+  height: 55vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 5vh 0;
+  /* padding: 5vh 0; */
   background: url(../images/destitnation.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
+  background-position: center;
   position: relative;
   overflow: hidden;
 }
@@ -789,7 +789,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2); /* Adjust the opacity as needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
   backdrop-filter: blur(2px); /* Adjust the blur radius as needed */
   z-index: 0;
 }
@@ -798,19 +798,25 @@ h1 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
   height: 8vh;
+  padding: 1rem;
   z-index: 1;
 }
 .one-cards {
+  margin-top: 20vh;
   z-index: 1;
 }
 
 .one-title h1 {
+  margin-bottom: 0.5rem;
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .one-title h3 {
   color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .one-cards,
@@ -823,19 +829,34 @@ h1 {
 }
 
 .card1 {
-  height: 10vh;
-  width: 20vw;
-  background-color: #4a4848;
-  border-radius: 20px;
+  height: 6vh;
+  width: 12vw;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #0d6e23;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.card1:hover {
+  transform: translateY(-5px);
+}
+.card1 h3 {
+  color: #0d6e23;
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .two {
-  padding: 5vh 5vw;
+  /* padding: 5vh 5vw; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color:#f0f0f0;;
+  background-color: #f0f0f0;
 }
 
 .two-title h1,
@@ -868,9 +889,9 @@ h1 {
   animation-range: entry 75% cover 75%;
 }
 
-.three {
+/* .three {
   padding: 5vh 0;
-}
+} */
 .three-title {
   padding: 3vh 3vw;
 }
