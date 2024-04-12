@@ -1064,6 +1064,6 @@ footer a:hover {
   transform: scale(1.1);
   transition: .3s;
 }
-#content-wrapper, #stories-page, #gallery-page, #package-page, #package-detail-page {
+#content-wrapper, #stories-page, #gallery_page, #package-page, #package-detail-page, .contact_us {
   padding-top: 100px;
 }

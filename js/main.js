@@ -29,7 +29,7 @@ function sliderInit() {
         arrows: true,
         dots: false,
         autoplay: true,
-        speed: 500000,
+        speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
     });
@@ -37,7 +37,7 @@ function sliderInit() {
         arrows: true,
         dots: false,
         autoplay: true,
-        speed: 500000,
+        speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1
     });

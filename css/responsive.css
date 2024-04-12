@@ -157,7 +157,7 @@
         flex: 0 0 50%;
         max-width: 50%;
     }
-    #content-wrapper, #stories-page, #gallery-page, #package-page, #package-detail-page {
+    #content-wrapper, #stories-page, #gallery_page, #package-page, #package-detail-page, .contact_us {
         padding-top: 64px;
     }
     ul li a:hover, ul li a:focus {
@@ -281,7 +281,7 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
-    #content-wrapper, #stories-page, #gallery-page, #package-page, #package-detail-page {
+    #content-wrapper, #stories-page, #gallery_page, #package-page, #package-detail-page, .contact_us {
         padding-top: 50px;
       }
     .travel-logo img {
