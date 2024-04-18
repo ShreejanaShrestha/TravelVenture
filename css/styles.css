@@ -630,7 +630,6 @@ footer a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding: 5vh 0; */
   background: url(../images/destitnation.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -685,7 +684,7 @@ footer a:hover {
   width: 100vw;
   max-width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -747,7 +746,7 @@ footer a:hover {
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
-
+  margin-right: 2px;
 }
 
 .card2 .two-content {
@@ -767,16 +766,15 @@ footer a:hover {
 }
 
 .three-card-content {
-  width: 100vw;
-  max-width: 100%;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: center;
+  margin: -20px;
 }
 
 .card3 {
   height: 60vh;
-  width: 33.33%;
+  width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -784,8 +782,8 @@ footer a:hover {
   position: relative;
   overflow: hidden;
   border-radius: 25px;
-  margin: 10px;
 }
+
 
 .background-image {
   position: absolute;
@@ -795,6 +793,7 @@ footer a:hover {
   height: 100%;
   background: url(../images/img2.jpg);
   background-size: cover;
+  background-position: center;
   filter: brightness(50%) grayscale(30%);
   z-index: -1;
   transition: transform 1s ease, filter 0.4s ease;

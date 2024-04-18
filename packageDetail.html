@@ -165,7 +165,7 @@
           <h1>Explore Our Other Offerings</h1>
         </div>
         <div class="three-card-content">
-          <div class="card3">
+          <div class="card3 me-2">
             <div class="background-image" style="background-image: url(images/service9.jpeg)"></div>
             <div class="card3-content">
               <div class="card3-title">
@@ -179,7 +179,7 @@
               <button class="card3-button">View More</button>
             </div>
           </div>
-          <div class="card3">
+          <div class="card3 me-2">
             <div class="background-image"></div>
             <div class="card3-content">
               <div class="card3-title">
@@ -307,6 +307,23 @@
     const index5 = document.getElementById('card-index5');
     const para1 = document.getElementById('para1');
     const para2 = document.getElementById('para2');
+    // const descDiv = document.getElementById('card-index1');
+    // const itinaryDiv = document.getElementById('card-index2');
+    // const mapDiv = document.getElementById('card-index3');
+    // const rulesDiv = document.getElementById('card-index4');
+    // const notesDiv = document.getElementById('card-index5');
+    index1.style.backgroundColor = "#0d6e23";
+    index1.style.color = "#ffffff";
+    var allsiblings = document.querySelectorAll('.card2');
+
+    function tabActivetoggle(clickedElement) {
+      for (var i = 0; i < allsiblings.length; i++) {
+        allsiblings[i].style.backgroundColor = '#ffffff';
+        allsiblings[i].style.color = '#000000';
+      }
+      clickedElement.style.backgroundColor = "#0d6e23";
+      clickedElement.style.color = "#ffffff";
+    }
 
     index1.addEventListener('click', () => {
       para1.innerHTML = `Embark on a journey that will bring your family closer together than ever before. Our "Fam-tastic Voyages"
@@ -325,6 +342,7 @@
       activities that will captivate and delight every member of your family. Prepare to strengthen your familial
       bonds as you navigate new landscapes, embrace new cultures, and create a tapestry of shared experiences that
       will forever bind you together in cherished memories.`
+      tabActivetoggle(index1);
     })
     index2.addEventListener('click', () => {
       para1.innerHTML = `<b>Day 1:</b> Arrive in San José
@@ -363,6 +381,7 @@
       `
 
       para2.innerHTML = ` `
+      tabActivetoggle(index2);
     })
     index3.addEventListener('click', () => {
       para1.innerHTML = `Embark on a journey that will bring your family closer together than ever before. Our "Fam-tastic Voyages"
@@ -375,12 +394,13 @@
       Alternatively, lose yourselves in the rich tapestry of vibrant traditions, savoring the flavors of authentic
       cuisine, and immersing yourselves in the warmth of local hospitality.`
 
-      para4.innerHTML = `With our expert guidance, you'll explore breathtaking destinations, uncover hidden gems, and partake in
+      para2.innerHTML = `With our expert guidance, you'll explore breathtaking destinations, uncover hidden gems, and partake in
       authentic local traditions. Whether you're seeking to conquer nature's most exhilarating challenges or
       simply bask in the beauty of your surroundings, our "Fam-tastic Voyages" offer a harmonious blend of
       activities that will captivate and delight every member of your family. Prepare to strengthen your familial
       bonds as you navigate new landscapes, embrace new cultures, and create a tapestry of shared experiences that
       will forever bind you together in cherished memories.`
+      tabActivetoggle(index3);
     })
     index4.addEventListener('click', () => {
       para1.innerHTML = `<b>General Tips</b>
@@ -416,6 +436,7 @@
       `
 
       para2.innerHTML = ` `
+      tabActivetoggle(index4);
     })
     index5.addEventListener('click', () => {
       para1.innerHTML = `<b>Materials Needed</b>
@@ -441,6 +462,7 @@
       Let kids be creative with colors, patterns, textures
       `
       para2.innerHTML = ` `
+      tabActivetoggle(index5);
     })
 
   </script>
